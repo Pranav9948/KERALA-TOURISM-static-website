@@ -1,0 +1,801 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-family: "Oswald";
+}
+
+body {
+  height: 1000px;
+  overflow-x: hidden;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("./photos/onam.jpg");
+  min-height: 480px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Header styling starts */
+
+.headers {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header {
+  width: 100%;
+
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 57, 115),
+    rgb(53, 53, 139)
+  );
+}
+.header ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.header ul li {
+  display: inline-block;
+  width: 100px;
+  color: red;
+}
+
+.blue {
+  position: fixed;
+  top: 0;
+  background: blue;
+  width: 100%;
+  height: 50px;
+  z-index: 2;
+}
+
+.header-left img {
+  height: 50px;
+  margin: 20px;
+}
+
+.header-right img {
+  height: 30px;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.navBar li {
+  display: inline;
+  padding-right: 24px;
+  color: white;
+}
+
+.navBar li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+
+
+.navBar {
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  margin-top: -16px;
+}
+/* Header styling ends */
+
+/* Section 1 styling starts */
+
+.section1 {
+
+  background-color: #ffffff;
+  margin-top: 30px;
+  height: 604px;
+  text-align: center;
+}
+
+.sect1_head {
+  height: 60px;
+}
+
+.sect1_head h1 {
+  font-size: 30px;
+  color: #003366;
+  text-align: center;
+  line-height: 60px;
+  font-family: sans-serif;
+}
+
+.section1_images {
+  display: flex;
+  margin-right: 30px;
+  margin-left: 40px;
+  margin-top: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.sect1 img {
+  height: 438px;
+  width: 291px;
+  margin: 5px;
+}
+
+.section1_images::-webkit-scrollbar {
+  width: 0;
+}
+
+.sect1 h3 {
+  position: absolute;
+  top: 340px;
+  padding-left: 80px;
+  color: #ffff;
+  font-size: 40px;
+  line-height: 22px;
+  font-family: "oswald";
+}
+.sect1Btn1 {
+  font-size: 16px;
+  text-align: center;
+  height: 40px;
+  width: 250px;
+  line-height: 20px;
+  background-color: #003366;
+  color: #ffff;
+ 
+}
+
+/* Section 1 styling ends */
+
+/* Section 2 styling starts */
+
+.section2 {
+  background: #e3e7f1;
+  margin-top: 40px;
+}
+
+.section2 h2 {
+  color: #003366;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  font-family: sans-serif;
+}
+
+.sect2Posts img {
+  height: 165px;
+  width: 295px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.sect2Posts {
+  position: relative;
+}
+
+.sect2Posts h4 {
+  background-color: #000000;
+  opacity: 0.7;
+  position: absolute;
+  top: 143px;
+  margin-left: 15px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 25px;
+  width: 95%;
+  height: 42px;
+  padding-top: 8px;
+}
+
+.section2_1_Images {
+  display: flex;
+}
+
+.section2_2_Images {
+  display: flex;
+}
+
+.sect2Btn1 {
+  font-size: 16px;
+  text-align: center;
+  height: 40px;
+  width: 250px;
+  line-height: 20px;
+  background-color: #003366;
+  color: #ffff;
+  margin-left: 550px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* Section 2 styling ends */
+
+/* Section 3 styling starts */
+
+.section3 {
+  background-image: url("photos/section3images/bckgrnd.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 800px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-top: 40px;
+  opacity: 0.9;
+}
+
+.section3_Images {
+  display: flex;
+  position: relative;
+}
+
+.section3_2_Images {
+  display: flex;
+  position: relative;
+}
+
+.section3_image img {
+  width: 370px;
+  height: 270px;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+.section3_image h5 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 22px;
+  position: absolute;
+  top: 262px;
+  background-color: #000000;
+  opacity: 0.7;
+  margin-left: 25px;
+  width: 370px;
+  height: 21%;
+  padding-top: 25px;
+  font-family: sans-serif;
+}
+
+.sect3Btn1 {
+  font-size: 16px;
+  text-align: center;
+  height: 40px;
+  width: 250px;
+  line-height: 20px;
+  background-color: #076bcf;
+  color: #ffff;
+  margin-left: 550px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* Section 3 styling ends */
+
+.sectionDiv {
+  display: flex;
+}
+.new {
+  font-size: 48px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.sectionDiv p {
+  margin-left: 200px;
+}
+
+.secDivBtn {
+  font-size: 16px;
+  text-align: center;
+  height: 40px;
+  width: 200px;
+  line-height: 20px;
+  background-color: #1e98fc;
+  color: #ffff;
+  margin-left: 550px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border: none;
+}
+
+/* section4 starts*/
+
+.section4 {
+  background-color: #e3e7f1;
+  color: #003366;
+}
+
+.section4 h2 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  font-size: 40px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.section4_images {
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.festivals img {
+  height: 271px;
+  width: 271px;
+  margin-right: 10px;
+}
+
+.festivals {
+  border: 2px solid white;
+}
+.festivals h4 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.festivals.pada {
+  margin-left: 30px;
+}
+
+.boatImage img {
+  width: 100%;
+  height: 600px;
+}
+
+.BoatBtn {
+  position: relative;
+}
+
+.BoatBtn1 {
+  font-size: 16px;
+  text-align: center;
+  height: 56px;
+  width: 350px;
+  line-height: 20px;
+  background-color: #000000;
+  opacity: 0.3;
+  color: #ffff;
+  margin-left: 550px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  position: absolute;
+  top: -500px;
+  font-size: 30px;
+  left: -200px;
+}
+/* section4 ends*/
+
+.BoatBtn p {
+  position: absolute;
+  top: -250px;
+  font-size: 30px;
+  left: 60px;
+  color: #ffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.tourPackage {
+  text-align: center;
+  background: #e3e7f1;
+}
+
+.tourPackage h4 {
+  color: #003366;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.tourPackage p {
+  padding-bottom: 40px;
+  font-size: 20px;
+  line-height: 22px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.offerimage img {
+  width: 392px;
+  height: 220px;
+  margin-right: 5px;
+}
+
+.package_images1 {
+  margin-top: 30px;
+
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+}
+
+.package_images2 {
+  margin-top: -20px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+}
+
+.offerimage {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.offerDescr p {
+  position: absolute;
+  top: 70px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  left: 30px;
+}
+
+.offerDescr h5 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.offerimage button {
+  position: absolute;
+  top: 170px;
+  left: 180px;
+  font-size: 16px;
+  text-align: center;
+  height: 40px;
+  width: 200px;
+  line-height: 20px;
+  background-color: #d81212c7;
+  color: #ffff;
+  border: none;
+}
+
+.sect6Btn1 {
+  font-size: 16px;
+  text-align: center;
+  height: 40px;
+  width: 250px;
+  line-height: 20px;
+  background-color: #06306b;
+  color: #ffff;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tripPlan {
+  text-align: center;
+  font-size: 30px;
+  color: #003366;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+
+.plann img {
+  color: #06306b;
+}
+
+.plann {
+  
+  margin-top: 40px;
+  margin-left: 45px;
+
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  height: 120px;
+  margin: auto;
+  width: 70%;
+  border: 3px solid rgb(70, 62, 149);
+  margin-top: 40px;
+  background-color: #e3e7f1;
+  margin-bottom: 40px;
+  padding: 2px;
+}
+
+
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.input {
+  width: 300px;
+  height: 10px;
+  padding: 20px;
+}
+
+.searchs {
+  height: 40px;
+  background-color: rgb(88, 207, 88);
+  border: none;
+  width: 100px;
+  color: #ffff;
+}
+
+
+/* photo gallery starts*/
+
+.photoGallery h3 {
+
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Quicksand';
+  margin-bottom: 40px;
+  color: #003366;
+}
+
+.galleryDetails img {
+
+  width: 212px;
+  height: 212px;
+  margin-right: 5px;
+}
+
+.galleryDetails h5 {
+
+  position: absolute;
+  top: 180px;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #000000;
+  opacity: 0.5;
+  padding-left: 35px;
+  margin-top: 8px;
+  width: 212px;
+  
+}
+
+.photo_gallery{
+
+  display: flex;
+  position: relative;
+}
+
+.photo_gallery1{
+
+  display: flex;
+  position: relative;
+}
+
+.sect7Btn1 {
+  font-size: 16px;
+  text-align: center;
+  height: 40px;
+  width: 250px;
+  line-height: 20px;
+  background-color: #06306b;
+  color: #ffff;
+  margin-left: 500px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+
+
+/* photo gallery ends */
+
+
+/* connect with us */
+
+.connect {
+
+  background-color: #b1d4f1;
+}
+
+.connect h3{
+
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Quicksand';
+  margin-bottom: 40px;
+  color: #003366;
+  padding-top: 40px;
+}
+
+.connect h4{
+
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Quicksand';
+  padding-top: 50px;
+  color: #003366;
+  padding-bottom: 40px;
+  
+}
+
+.connection i {
+
+  font-size: 70px;
+  margin-left: 120px;
+}
+
+.footers {
+
+  background-color: #e3e7f1;
+}
+
+.footer {
+
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.footerList li a {
+
+  text-decoration: none;
+}
+
+.footerList li {
+
+  padding: 8px;
+  list-style-type: none;
+  margin-left: 18px;
+  padding-left: 20px;
+}
+
+
+.footerList ul {
+
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 30px;
+  font-family: 'Quicksand';
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.footerInput{
+
+  
+  margin-left: 200px;
+}
+
+
+.footerInput h3{
+
+  font-family: 'Quicksand';
+  font-size: 30px;
+  color: #06306b;
+  padding-top: 20px;
+}
+
+.footerInput p{
+
+  font-family:  Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+  color: #000000;
+  padding-top: 20px;
+}
+
+.footerInput input {
+
+  width: 300px;
+  height: 30px;
+  margin-top: 30px;
+}
+
+.footerInput button {
+
+  background: #0562bf;
+  color: white;
+  height: 30px;
+  border: none;
+  width: 100px;
+}
+
+.footerDetails{
+  display: flex;
+}
+
+.footerdes{
+
+  margin-left: 200px;
+  padding-top: 100px;
+ 
+}
+
+.footerdes p {
+  font-family: monospace;
+}
+.footerdes h5 {
+
+  font-family: sans-serif;
+  padding:25px;
+  
+  
+}
+
+.footerdes h5 a {
+
+  text-decoration: none;
+  color: #1e98fc;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.mainFooter_icons img{
+
+width: 70px;
+height: 54px;
+
+}
+
+.mainFooter {
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerDes{
+  background-color: #06306b;
+  padding: 40px;
+}
+
+
+
+.footerDes p{
+ color: #ffffff;
+  font-family: 'Quicksand';
+  text-align: center;
+}
+
+
+.footerDivBtn {
+  font-size: 16px;
+  text-align: center;
+  height: 50px;
+  width: 250px;
+  font-family: sans-serif;
+  line-height: 20px;
+  background-color: rgba(255, 0, 0, 0.779);
+  color: #ffff;
+  margin-left: 550px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border: none;
+}
+
